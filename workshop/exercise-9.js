@@ -10,6 +10,14 @@
 
 function greetLong(lst) {
   // lst is an array of strings
+  let newList = lst.filter(function (element) {
+    return element.length > 4;
+  });
+
+  let greetList = newList.map(function (element) {
+    return "Hello " + element;
+  });
+  return greetList;
 }
 // -------------------------------------------------------------------------
-console.log('Q7 greetLong()', greetLong(['Scott', 'Bob', 'Ric', 'Jim']));
+console.log("Q7 greetLong()", greetLong(["Scott", "Bob", "Ric", "Jim"]));
