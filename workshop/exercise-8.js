@@ -9,6 +9,11 @@
 
 function greet(lst) {
   // lst is an array of strings
+  let newList = lst.map(function (element) {
+    return "Hello " + element;
+  });
+
+  return newList;
 }
 // -------------------------------------------------------------------------
-console.log('Q6 greet()', greet(['David', 'Billy', 'Lisa', 'Jennifer']));
+console.log("Q6 greet()", greet(["David", "Billy", "Lisa", "Jennifer"]));
