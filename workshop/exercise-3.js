@@ -17,12 +17,13 @@ function max(num1, num2) {
 // Without changing the function at all,
 // Can you figure out how we could use it to determine the greater number between 4 integers?
 
-let max1 = max(numA, numB);
-let max2 = max(numC, numD);
+function maxAll(numA, numB, numC, numD) {
+  let max1 = max(numA, numB);
+  let max2 = max(numC, numD);
 
-let maxAll = max(max1, max2);
-
-console.log(maxAll);
+  return max(max1, max2);
+}
+console.log(maxAll(24, 76, 89, 111));
 
 // Q3.3
 // Would this work with more integers?
